@@ -26,7 +26,7 @@ Product.belongsToMany(Tag, {
     })
     // Tags belongToMany Products (through ProductTag)
     /* The Source_Model.belongsToMany(Target_Model, { through: 'C (Junction_Model)' }) association means that a Many-To-Many relationship exists between Source_Model and Target_Model, using table C as junction table, which will have the foreign keys (Source_Model_Id and Target_Model_Id, for example). Sequelize will automatically create this model C (unless it already exists) and define the appropriate foreign keys on it. */
-Tag.belongsToMany(Product, {})
+Tag.belongsToMany(Product, { through: 'C' })
 module.exports = {
     Product,
     Category,
