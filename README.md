@@ -4,7 +4,9 @@
 
 This API routing-based application allows the user to create a database and track the inventory of items in stock using request.body JSON objects.
 
-## [VIDEO DEMO]()
+## [VIDEO DEMO 1](https://youtu.be/ioy8QAJbmYw)
+
+## [VIDEO DEMO 2](https://youtu.be/Owf9U7LP_Jk)
 
 ## Technologies Used
 
@@ -14,6 +16,15 @@ This API routing-based application allows the user to create a database and trac
 - [Sequelize](https://www.npmjs.com/package/sequelize)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [Insomnia Core](https://insomnia.rest/)
+
+## Commands to run program
+
+- terminal: npm install
+- terminal: mysql -u root -p
+- mysql: source db/schema.sql
+- mysql: exit
+- terminal: npm run seed
+- terminal: node server.js
 
 ## Sample Demos
 
@@ -98,9 +109,6 @@ The database contains the following four models:
 ## Associations
 
 - Product belongs to Category, as a category can have multiple products but a product can only belong to one category.
-
 - Category has many Product models.
-
 - Product belongs to many Tag models. Using the ProductTag through model allows products to have multiple tags and tags to have many products.
-
 - Tag belongs to many Product models.
