@@ -19,12 +19,12 @@ This API routing-based application allows the user to create a database and trac
 
 ## Commands to run program
 
-- terminal: npm install
-- terminal: mysql -u root -p
-- mysql: source db/schema.sql
-- mysql: exit
-- terminal: npm run seed
-- terminal: node server.js
+1. terminal: npm install
+2. terminal: mysql -u root -p
+3. mysql: source db/schema.sql
+4. mysql: exit
+5. terminal: npm run seed
+6. terminal: node server.js
 
 ## Sample Demos
 
